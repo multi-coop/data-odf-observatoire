@@ -6,8 +6,7 @@
     },
     {
       "name": "nom",
-      "sticky": true,
-      "primaryKey": true
+      "sticky": true
     },
     {
       "name": "siren"
@@ -23,18 +22,90 @@
     },
     {
       "name": "type",
-      "subtype": "tag"
+      "subtype": "tag",
+      "definitions": [
+        {
+          "value": "AGCT",
+          "label": "Autre Groupement de Collectivités Territoriales",
+          "description": "SMI, GIP, ..."
+        },
+        {
+          "value": "CA",
+          "label": "Communauté d'Agglomération"
+        },
+        {
+          "value": "CC",
+          "label": "Communauté de Communes"
+        },
+        {
+          "value": "COM",
+          "label": "Commune"
+        },
+        {
+          "value": "CU",
+          "label": "Communauté Urbaine"
+        },
+        {
+          "value": "DEP",
+          "label": "Département"
+        },
+        {
+          "value": "DSPT",
+          "label": "Délagataire de Services Publics Territoriaux",
+          "description": "opérateurs privés, Soc. d'Economie Mixte,..."
+        },
+        {
+          "value": "EPT",
+          "label": "Etablissement Public Territorial",
+          "description": "rattaché à la Métropole du Grand Paris"
+        },
+        {
+          "value": "MET",
+          "label": "Métropole"
+        },
+        {
+          "value": "OACT",
+          "label": "Organisme Associé de Collectivité Territoriale",
+          "description": "Office de Tourisme, Régie de transport, ..."
+        },
+        {
+          "value": "REG",
+          "label": "Région"
+        },
+        {
+          "value": "SDE",
+          "label": "..."
+        }
+      ]
     },
     {
-      "name": "tags",
+      "name": "thématiques",
       "subtype": "tags",
       "tagSeparator": "-",
-      "bgColor" : "#BED3C3"
+      "bgColor" : "#BED3C3",
+      "foreignKey": {
+        "activate": true,
+        "ressource": "https://github.com/multi-coop/gitribute-content-test/blob/main/data/csv/odf/ODF-Observatoire-thematiques.csv",
+        "fields": "Thématique",
+        "returnFields" : [
+          "Tags"
+        ]
+      }
     },
     {
       "name": "merge",
       "subtype": "tags",
-      "tagSeparator": "+"
+      "tagSeparator": "+",
+      "definitions": [
+        {
+          "value": "ptf",
+          "label": "Publication sur un portail local"
+        },
+        {
+          "value": "datagouv",
+          "label": "Publication sur le portail data.gouv"
+        }
+      ]
     },
     {
       "name": "orga",
@@ -48,7 +119,19 @@
     },
     {
       "name": "depcode",
-      "subtype": "tag"
+      "subtype": "tag",
+      "foreignKey": {
+        "activate": true,
+        "ressource": "https://github.com/multi-coop/gitribute-content-test/blob/main/data/csv/odf/ODF-Observatoire-departements-regions.csv",
+        "ressourceOptions": {
+          "separator": ","
+        },
+        "fields": "depcode",
+        "returnFields" : [
+          "Département",
+          "région"
+        ]
+      }
     },
     {
       "name": "reg_code_geo",
@@ -117,6 +200,18 @@
         { 
           "resp_field" : "features.0.geometry.coordinates.0",
           "map_to_field": "lon"
+        }
+      ]
+    },
+    {
+      "api_name": "heidi",
+      "source_fields": [],
+      "activate": true,
+      "api": "http://heidi-back.app.etalab.studio",
+      "results_fields": [
+        { 
+          "resp_field" : "0.unique_id",
+          "map_to_field": "uuid"
         }
       ]
     }
