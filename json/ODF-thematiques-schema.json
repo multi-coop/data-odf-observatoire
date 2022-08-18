@@ -1,0 +1,16 @@
+{
+  "fields": [
+    {
+      "name": "Name"
+    },
+    {
+      "name": "Tags"
+    },
+    {
+      "name": "Organisations_Id"
+    },
+    {
+      "name": "Organisations_Noms"
+    }
+  ]
+}

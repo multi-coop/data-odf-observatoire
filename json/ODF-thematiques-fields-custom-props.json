@@ -1,0 +1,29 @@
+{
+  "fields": [
+    {
+      "name": "Name",
+      "subtype": "tag",
+      "tagSeparator": ",",
+      "primaryKey": true,
+      "foreignKey": true
+    },
+    {
+      "name": "Tags",
+      "subtype": "tags",
+      "tagSeparator": ",",
+      "bgColor" : "#B0B9A8"
+    },
+    {
+      "name": "Organisations_Id",
+      "subtype": "tags",
+      "tagSeparator": ",",
+      "bgColor" : "#f4a261"
+    },
+    {
+      "name": "Organisations_Noms",
+      "subtype": "tags",
+      "tagSeparator": ",",
+      "bgColor" : "#CE6A6B"
+    }
+  ]
+}

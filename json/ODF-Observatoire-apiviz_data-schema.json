@@ -1,0 +1,122 @@
+{
+  "fields": [
+    {
+      "name": "id_odf",
+      "title": "Identifiant ODF",
+      "description": "Identifiant unique proposé par Open Data France",
+      "type": "string"
+    },
+    {
+      "name": "siren",
+      "title": "N° SIREN",
+      "description": "Numéro de SIREN de la structure",
+      "type": "string"
+    },
+    {
+      "name": "type",
+      "title": "Type d&#39;organisation",
+      "type": "string",
+      "constraints": {
+        "enum" : [
+          "AGCT",
+          "CA",
+          "CC",
+          "COM",
+          "CU",
+          "DEP",
+          "DSPT",
+          "EPT",
+          "MET",
+          "OACT",
+          "REG",
+          "SDE"
+        ]
+      }
+    },
+    {
+      "name": "tags",
+      "title": "Tags thématiques",
+      "type": "string"
+    },
+    {
+      "name": "merge",
+      "title": "Merge",
+      "type": "string",
+      "constraints": {
+        "enum" : [
+          "datagouv",
+          "ptf"
+        ]
+      }
+    },
+    {
+      "name": "orga",
+      "type": "string"
+    },
+    {
+      "name": "platform_clean",
+      "type": "string"
+    },
+    {
+      "name": "depcode",
+      "type": "string"
+    },
+    {
+      "name": "reg_code_geo",
+      "type": "string"
+    },
+    {
+      "name": "reg_code_short",
+      "type": "string"
+    },
+    {
+      "name": "tranche_ptf",
+      "type": "string"
+    },
+    {
+      "name": "tranche_pop",
+      "type": "string"
+    },
+    {
+      "name": "url_ptf",
+      "title": "URL de la plateforme",
+      "type": "string"
+    },
+    {
+      "name": "url_datagouv",
+      "title": "URL sur datagouv",
+      "type": "string",
+      "format": "uri"
+    },
+    {
+      "name": "nb_ptf",
+      "title": "Nombre de plateformes",
+      "type": "integer"
+    },
+    {
+      "name": "nb_datagouv",
+      "title": "Nombre de plateformes",
+      "type": "integer"
+    },
+    {
+      "name": "pop_insee",
+      "title": "Population",
+      "type": "integer"
+    },
+    {
+      "name": "lat",
+      "title": "Latitude",
+      "type": "number"
+    },
+    {
+      "name": "lon",
+      "title": "Longitude",
+      "type": "number"
+    },
+    {
+      "name": "boolean",
+      "title": "Bouléen",
+      "type": "boolean"
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>ODF - Données de l'Observatoire de l'Open Data</title>
+</head>
+
+<body style="background-color: grey; padding: 1em;">
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+      Please enable it to continue.</strong>
+  </noscript>
+
+  <h2 id="title-demo" class="pt-6 title is-flex is-align-items-center is-justify-content-center has-text-white">
+    <a href="https://gitlab.com/multi-coop/gitribute" target="_blank">
+      <img src="https://gitlab.com/multi-coop/gitribute/-/raw/main/public/logo_GITRIBUTE.png" alt="logo gitribute" style="height: 50px !important; width: auto !important">
+    </a>
+    <span class="ml-3 pb-3">
+      Intégration du widget <code>gitribute (multi files)</code> dans une page html
+    </span>
+  </h2>
+
+  <div class="container">
+    <div class="content my-6 px-6">
+      <p class="is-size-6 has-text-white">
+        L'import du widget <code>multi-gitribute-multi-files</code> dans une page html permet d'afficher sur un site tiers
+      </p>
+      <p class="is-size-6 has-text-white">
+        L'import du widget consiste à simplement copier-coller quelques lignes dans la page html de votre choix.
+      </p>
+      <p class="is-size-6 has-text-white">
+        Le widget est paramétrable et il peut être utilisé indistinctement et séparément pour différents tableurs source
+      </p>
+      <p class="is-size-6 has-text-white">
+        Le widget est sous licence libre et il n'y a aucun coût ou surcoût dans son utilisation.
+      </p>
+      <p class="is-size-6 has-text-white">
+        Plusieurs fonctionnalités sont intégrées : 
+        <ul>
+          <li class="is-size-6 has-text-white">
+            Filtres de sélection (paramétrables) ;
+          </li>
+          <li class="is-size-6 has-text-white">
+            Redirection vers le site source depuis les fiches détaillées ;
+          </li>
+          <li class="is-size-6 has-text-white">
+            Rechargement des données source ;
+          </li>
+          <li class="is-size-6 has-text-white">
+            Possibilité de télécharger les données au format .tsv ;
+          </li>
+          <li class="is-size-6 has-text-white">
+            Plus de d'infos dans la 
+            <a href="https://gitlab.com/multi-coop/gitribute-odf-observatoire" target="_blank" class="has-text-white is-underlined">
+              documentation en ligne.
+            </a>
+          </li>
+        </ul>
+      </p>
+    </div>
+  </div>
+
+  <div style="background-color: white; margin: 1em;">
+
+
+
+
+
+
+<!-- GITRIBUTE - contribute with GIT ...but without minding it-->
+<!-- An open source widget coded with 🤍  by the tech cooperative multi : https://multi.coop -->
+
+<!-- GITRIBUTE WIDGET'S HTML BLOCK-->
+<multi-gitribute-multi-files
+  title="test multi-files observatoire"
+  options='{
+  "display": "horizontal"
+}'
+  gitfiles='[
+  {
+    "title": "Données de l observatoire",
+    "activate": true,
+    "gitfile": "https://github.com/multi-coop/gitribute-content-test/blob/main/data/csv/odf/ODF-Observatoire-apiviz_data-export_solidata-220425b-simplified.csv",
+    "default-tab": true,
+    "options": {
+      "height": "500px",
+      "separator": ";",
+      "lockcolumns": true,
+      "customfilters": {
+        "activate": true,
+        "filterfields": [
+          "type",
+          "platform_clean",
+          "depcode"
+        ]
+      },
+      "schema": {
+        "file": "https://github.com/multi-coop/gitribute-content-test/blob/main/data/json/odf/ODF-Observatoire-apiviz_data-schema.json"
+      },
+      "fields-custom-properties": {
+        "file": "https://github.com/multi-coop/gitribute-content-test/blob/main/data/json/odf/ODF-Observatoire-apiviz_data-fields-custom-props.json"
+      },
+      "cardsview": {
+        "activate": true,
+        "default": false
+      },
+      "cardsdetail": true,
+      "cardssettings": {
+        "mini": {
+          "nom": {
+            "position": "title"
+          },
+          "siren": {
+            "position": "resume"
+          },
+          "tags": {
+            "position": "tags"
+          }
+        },
+        "detail": {
+          "nom": {
+            "position": "title"
+          },
+          "orga": {
+            "position": "resume"
+          },
+          "siren": {
+            "position": "description"
+          },
+          "adress": {
+            "position": "description"
+          },
+          "dep_label": {
+            "position": "tags"
+          },
+          "tags": {
+            "position": "tags"
+          }
+        }
+      }
+    },
+    "usertoken": ""
+  },
+  {
+    "title": "Thématiques",
+    "activate": true,
+    "gitfile": "https://github.com/multi-coop/gitribute-content-test/blob/main/data/csv/odf/ODF-Observatoire-thematiques.csv",
+    "options": {
+      "height": "500px",
+      "separator": ",",
+      "lockcolumns": true,
+      "customfilters": {
+        "activate": true,
+        "filterfields": [
+          "Tags",
+          "Organisations_Noms"
+        ]
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "Organisations copy",
+            "type": "boolean"
+          }
+        ]
+      },
+      "fields-custom-properties": {
+        "file": "https://github.com/multi-coop/gitribute-content-test/blob/main/data/json/odf/ODF-thematiques-fields-custom-props.json"
+      }
+    },
+    "onlypreview": true,
+    "usertoken": ""
+  },
+  {
+    "title": "Schéma des données de l observatoire",
+    "activate": true,
+    "default-tab": false,
+    "gitfile": "https://github.com/multi-coop/gitribute-content-test/blob/main/data/json/odf/ODF-Observatoire-apiviz_data-schema.json",
+    "options": {
+      "defaultDepth": 2,
+      "allowKeyEdit": true
+    },
+    "onlypreview": false,
+    "usertoken": ""
+  },
+  {
+    "title": "Présentation de l Observatoire de l Open data",
+    "activate": true,
+    "gitfile": "https://github.com/multi-coop/gitribute-content-test/blob/main/texts/markdown/odf/ODF-observatoire-intro.md",
+    "options": ""
+  }
+]'
+  locale="fr"
+></multi-gitribute-multi-files>
+
+<!-- GITRIBUTE WIDGET'S APP.JS SCRIPT -->
+<script src="https://gitribute.multi.coop/js/app.js" type="text/javascript" defer></script>
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <p id="page-credits" class="mt-6 has-text-centered has-text-white">
+    Un projet numérique en partenariat avec
+    <a href="https://www.opendatafrance.net/" target="_blank" class="has-text-white is-underlined">
+      Open Data France
+    </a>
+    <br>
+    Codé par la coopérative numérique 
+    <a href="https://multi.coop" target="_blank" class="has-text-white is-underlined">
+      multi
+    </a>
+  </p>
+  <p id="page-credits" class="my-6 is-flex is-align-items-center is-justify-content-center">
+    <a href="https://www.opendatafrance.net/" class="mr-4" target="_blank">
+      <img src="https://gitlab.com/multi-coop/gitribute-odf-observatoire/-/raw/main/images/odf-logo.svg" alt="logo ODF" style="height: 60px !important; width: auto !important">
+    </a>
+  </p>
+  <p id="page-credits-multi" class="my-6 is-flex is-align-items-center is-justify-content-center">
+    <a href="https://multi.coop" class="" target="_blank">
+      <img src="https://gitlab.com/multi-coop/gitribute-odf-observatoire/-/raw/main/images/multi-logo.png" alt="logo multi" style="height: 80px !important; width: auto !important">
+    </a>
+  </p>
+</body>
+
+</html>

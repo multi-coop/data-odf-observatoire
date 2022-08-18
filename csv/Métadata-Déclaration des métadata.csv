@@ -1,0 +1,46 @@
+﻿Id,Table,Description du champ,Valeurs,Liste
+NOM,Dataset,Nom du publicateur,OPEN DATA FRANCE,
+SIRET,Dataset,Id unique du publicateur (Base SIREN),800534521,
+TITRE,Dataset,Titre du jeu de données,Données Observatoire ODT (référence) ,
+DESCRIPTION,Dataset,Description du jeu de données,Données brutes de l'observatrorie et indicateurs (calculs et grahiques) associés,
+THEME,Dataset,Thème général,Administration,
+COUV_SPAT_MAILLE,Dataset,Maille spatiale minimal,Commune,
+COUV_SPAT_NOM,Dataset,Couverture spaciale,France,
+COUV_TEMP_DEBUT,Dataset,Couverture temporelle (début),2020/01/01,
+COUV_TEMP_FIN,Dataset,Couverture temporelle (fin),2020/12/31,
+DATE_PUBL,Dataset,Date de première publication,2020/10/01,
+FREQ_MAJ,Dataset,Fréquence de mise à jour,en continue,
+DATE_MAJ,Dataset,Date de dernière mise à jour,2020/10/21,
+MOTS_CLES,Dataset,Mots clés (choix libre),"opendata, territoire, observatoire","mot-clé ou tag, séparé par une "","""
+LICENCE,Dataset,Licence juridique couvrant la publication des données de ce jeu,ODbL-1.0,https://vvlibri.org/fr/licence/odbl-10/legalcode/unofficial
+SIREN,Organisation,Id unique de la collectivité,,
+Nom,Organisation,Nom de la collectivité,,
+Type,Organisation,Type de collectivité territoriale,,"COM : Commune ; CC : Communauté de Communes ; CA : Communauté d'Agglomération ; CU : Communauté Urbaine ; EPT : Etab. Public Territorial, rattaché à la Métropole du Grand Paris ; MET : Métropole ; DEP : Département ; REG : Région ; AGCT : Autre Groupement de Coll. Terr : SMI, GIP, ... ; OAGT : Organisme Associé de Coll. Terr. : Office de Tourisme, Régie de transport, ... ; DSPT : Délégataire de Serivce Public Territoriaux : opérateurs privés, Soc. d'Economie Mixte,..."
+Regcode,Organisation,Code de la région (référentiel COG),,
+url-ptf,Organisation,Lien vers la page des données de la collectivité,,
+nb-ptf,Organisation,Nb de données publiées sur la plateforme locale,,
+url-datagouv,Organisation,Lien vers la page des données sur le portail data.gouv.fr,,
+nb-datagouv,Organisation,Nb de données publiées sur data.gouv.fr,,
+id-datagouv,Organisation,identifiant de la coll. dans data.gouv.fr,,
+id-ods,Organisation,identifiant de la coll. dans OpenDataSoft,,
+pop-insee,Organisation,population en nb d'habitants,,
+merge,Organisation,"Indicateur si la collectivité publie sur un portail local, sur data.gouv, sur les deux",,ptf : uniquement sur un portail local / data.gouv : uniquement du data.gouv. /  ptf+data.gouv : sur les deux
+Dep,Organisation,Département (zone géographique),,
+Ptf,Organisation,Plateforme de publication,Lien vers le champs Plateforme:Nom,
+Techno,Organisation,Technologie de la plateforme de publication,jointure avec le champ Plateforme:Technologie,
+Thèmatiques,Organisation,Thèmatiques couvertes par l'Organisation,mise en jour en cours,"voir Table Thèmatiques
+
+"
+Nom,Plateformes,Nom de la plateforme de publication,,
+Regcode,Plateformes,Code de la région (référentiel COG),,
+type,Plateformes,Type de plateforme de publication,,Portail : Site dédié / Géoportail : Site dédié sur plateforme SIG / Site web : Site web non structuré pour la gestion de données
+collab,Plateformes,type de collaboration de publication locale,,Dédié : ne recoit que les données de la collectivité / Mutualisé : recoit les données de plusieurs collectivités / Partenarial : recoit les données de collectivités ET de services déconcentrés de l'Etat / Partagé : recoit les données de quelques (généralement deux) collectivités associés (mais pas d'autres)
+thématique,Plateformes,thématique générale du portail ,,
+grappe,Plateformes,rattachement à un portail de plus haut niveau,,
+url-reuse,Plateformes,Lien vers la pages des réutilisations quand elle existe,,
+nb-reuse,Plateformes,Nb de réuse identifiées,,
+url-forum-dodo,Plateformes,Lien vers la pages des demandes quand elle existe,,
+nb-struct-hebergees,Plateformes,Nb de structure hébergée sur cette plateforme,,
+contact,Plateformes,mail du point de contact au sein de la collectivité,,
+twitter,Plateformes,cpte twitter lorsqu'il existe,,
+Organisations,Plateformes,organisation hébergées sur la plateforme ,,"numéros siren des Organisations hébergées séparés par un "","", sans blanc"
