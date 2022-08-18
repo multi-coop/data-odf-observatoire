@@ -1,4 +1,61 @@
 {
+  "contentFields"  : [
+
+    { "field" : "id_odf",
+      "field_format" : { "trim" : null, "type" : "object", "retrieve" : [0] },
+      "is_visible" : true,
+      "position" : "block_id"
+    },
+    { "field" : "dep_label", 
+      "field_format" : { "trim" : null, "type" : "object", "retrieve" : [0] },
+      "is_visible" : true,
+      "position" : "block_address"
+    },
+    { "field" : "nom", 
+      "field_format" : { "trim" : null, "type" : "object", "retrieve" : [0] },
+      "is_visible" : true,
+      "position" : "block_title"
+    },
+    { "field" : "text",
+      "field_format" : { "trim" : 100, "type" : "object", "retrieve" : [0] },
+      "is_visible" : true,
+      "position" : "block_abstract"
+    },
+    { "field"       : "type",
+      "field_format" : { "trim" : 20, "type" : "object", "retrieve" : [0] },
+      "is_visible"  : true,
+      "position"    : "block_tags",
+      "has_tooltip" : true,
+      "is_tag_like" : true,
+      "tags_separator" : "-",
+      "text_color" : "white",
+      "background_color" : "primary",
+      "convert_from_filters" : true
+    },
+    { "field"       : "platform_clean",
+      "field_format" : { "trim" : 20, "type" : "object", "retrieve" : [0] },
+      "is_visible"  : true,
+      "position"    : "block_tags_bis",
+      "has_tooltip" : true,
+      "is_tag_like" : true,
+      "tags_separator" : "-",
+      "text_color" : "white",
+      "background_color" : "warning",
+      "convert_from_filters" : true
+    },
+    { "field"       : "tags",
+      "field_format" : { "trim" : 20, "type" : "object", "retrieve" : [0] },
+      "is_visible"  : true,
+      "position"    : "block_tags_ter",
+      "has_tooltip" : true,
+      "is_tag_like" : true,
+      "tags_separator" : "-",
+      "text_color" : "white",
+      "background_color" : "light",
+      "convert_from_filters" : true
+    }
+  ],
+
   "mapOptions"   : {
 
     "url"              : "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
