@@ -104,10 +104,30 @@
         "has_popup"           : true,
         "popup_config"        : {
           "action" : "mousemove",
+          "_COMMENT": "### DEPRECATED 'field' key",
           "fields" : [
             { "position" : "field_main_title", "field" : "nom", "prefix" : null, "suffix" : null, "class": "is-size-6 has-text-weight-semibold" },
             { "position" : "field_info", "field" : null, "prefix" : "(cliquez pour + d'infos)", "suffix" : null, "class": "has-text-centered has-text-weight-light" }
-          ]
+          ],
+          "fields_settings": {
+            "nom" :          { "position": "title", "prefix" : null, "suffix" : null, "class": "is-size-6 has-text-weight-semibold" },
+            "_gitribute_" :  { "position": "info",  "prefix" : "(cliquez pour + d'infos)", "suffix" : null, "class": "has-text-centered has-text-weight-light" }
+          }
+        },
+        "cards_settings": {
+          "mini": {
+            "nom" :   { "position": "title" },
+            "siren" : { "position": "resume" },
+            "tags" :  { "position": "tags" } 
+          },
+          "detail": {
+            "nom" :       { "position": "title" },
+            "orga" :      { "position": "resume" },
+            "siren" :     { "position": "description" },
+            "adress" :    { "position": "description" },
+            "dep_label" : { "position": "tags" },
+            "tags"  :     { "position": "tags" }
+          }
         },
 
         "radius_min"          : 2,
@@ -223,11 +243,17 @@
             "has_popup" : true, 
             "popup_config" : {
               "action" : "mousemove",
+              "_COMMENT": "### DEPRECATED 'fields' key",
               "fields" : [
-                { "position" : "field_title" ,      "field" : "nom",       "prefix" : null,       "suffix" : null },
-                { "position" : "field_title_post" , "field" : "code",      "prefix" : " (",       "suffix" : ")" },
-                { "position" : "field_value" ,      "field" : "count_reg", "prefix" : "total : ", "suffix" : " organisations" }
-              ]
+                { "position" : "field_title",      "field" : "nom",       "prefix" : null,       "suffix" : null },
+                { "position" : "field_title_post", "field" : "code",      "prefix" : " (",       "suffix" : ")" },
+                { "position" : "field_value",      "field" : "count_reg", "prefix" : "total : ", "suffix" : " organisations" }
+              ],
+              "fields_settings": {
+                "nom" :        { "position": "title",      "prefix" : null,       "suffix" : null },
+                "code" :       { "position": "title_post", "prefix" : " (",       "suffix" : ")" },
+                "count_reg" :  { "position": "value",      "prefix" : "total : ", "suffix" : " organisations" }
+              }
             },
             "legend" : {
               "position" : "bottom-right",
@@ -274,11 +300,17 @@
             "has_popup" : false, 
             "popup_config" : {
               "action" : "mousemove",
+              "_COMMENT": "### DEPRECATED 'fields' key",
               "fields" : [
-                { "position" : "field_title" ,      "field" : "nom",       "prefix" : null,       "suffix" : null },
-                { "position" : "field_title_post" , "field" : "code",      "prefix" : " (",       "suffix" : ")" },
-                { "position" : "field_value" ,      "field" : "count_dep", "prefix" : "total : ", "suffix" : " organisations" }
-              ]
+                { "position" : "field_title",      "field" : "nom",       "prefix" : null,       "suffix" : null },
+                { "position" : "field_title_post", "field" : "code",      "prefix" : " (",       "suffix" : ")" },
+                { "position" : "field_value",      "field" : "count_dep", "prefix" : "total : ", "suffix" : " organisations" }
+              ],
+              "fields_settings": {
+                "nom" :        { "position": "title",      "prefix" : null,       "suffix" : null },
+                "code" :       { "position": "title_post", "prefix" : " (",       "suffix" : ")" },
+                "count_dep" :  { "position": "value",      "prefix" : "total : ", "suffix" : " organisations" }
+              }
             },
             "legend" : {
               "position" : "bottom-right",
@@ -343,11 +375,17 @@
             "has_popup" : true, 
             "popup_config" : {
               "action" : "mousemove",
+              "_COMMENT": "### DEPRECATED 'fields' key",
               "fields" : [
-                { "position" : "field_title" ,      "field" : "nom",       "prefix" : null,       "suffix" : null },
-                { "position" : "field_title_post" , "field" : "code",      "prefix" : " (",       "suffix" : ")" },
-                { "position" : "field_value" ,      "field" : "count_com", "prefix" : "total : ", "suffix" : " organisations" }
-              ]
+                { "position" : "field_title",      "field" : "nom",       "prefix" : null,       "suffix" : null },
+                { "position" : "field_title_post", "field" : "code",      "prefix" : " (",       "suffix" : ")" },
+                { "position" : "field_value",      "field" : "count_com", "prefix" : "total : ", "suffix" : " organisations" }
+              ],
+              "fields_settings": {
+                "nom" :        { "position": "title",      "prefix" : null,       "suffix" : null },
+                "code" :       { "position": "title_post", "prefix" : " (",       "suffix" : ")" },
+                "count_com" :  { "position": "value",      "prefix" : "total : ", "suffix" : " organisations" }
+              }
             },
             "legend" : {
               "position" : "bottom-right", 
@@ -385,11 +423,31 @@
       "is_activated"    : true,
       "is_drawer_open"  : false,
       "layers_switches" : [ 
-        { "label" : "régions" ,      "layers" : [ "chorolayer-regions" ], "default_visible" : true },
-        { "label" : "départements" , "layers" : [ "chorolayer-departements" ], "default_visible" : false },
-        { "label" : "organisations", "layers" : [ "all-points" ], "default_visible" : true },
-        { "label" : "clusters" ,     "layers" : [ "cluster-circles", "cluster-counts" ], "default_visible" : false },
-        { "label" : "radar" ,        "layers" : [ "heatmap-layer" ], "default_visible" : false }
+        {
+          "label" : "régions" ,
+          "layers" : [ "chorolayer-regions" ],
+          "default_visible" : true
+        },
+        {
+          "label" : "départements",
+          "layers" : [ "chorolayer-departements" ], 
+          "default_visible" : false 
+        },
+        {
+          "label" : "organisations", 
+          "layers" : [ "all-points" ],
+          "default_visible" : true
+        },
+        {
+          "label" : "clusters",
+          "layers" : [ "cluster-circles", "cluster-counts" ],
+          "default_visible" : false
+        },
+        {
+          "label" : "radar",
+          "layers" : [ "heatmap-layer" ],
+          "default_visible" : false
+        }
       ]
     }
 
