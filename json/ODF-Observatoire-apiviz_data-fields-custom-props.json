@@ -116,6 +116,7 @@
     {
       "name": "tags",
       "subtype": "tags",
+      "tagSeparator": "-",
       "allowNew": true
     },
     {
