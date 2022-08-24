@@ -61,7 +61,7 @@
     "url"              : "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
     "attribution"      : "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
     "subdomains"       : "abcd",
-    "center"           : [2.2137, 46.2276],
+    "center"           : [2.2137, 45.8740],
     "zoom"             : 5,
     "maxZoom"          : 18,
     "minZoom"          : 2,
