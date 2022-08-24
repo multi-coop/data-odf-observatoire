@@ -114,6 +114,11 @@
       "bgColor" : "#F0BE86"
     },
     {
+      "name": "tags",
+      "subtype": "tags",
+      "allowNew": true
+    },
+    {
       "name": "platform_clean",
       "subtype": "tag"
     },
