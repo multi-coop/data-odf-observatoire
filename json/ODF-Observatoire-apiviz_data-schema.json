@@ -14,7 +14,7 @@
     },
     {
       "name": "type",
-      "title": "Type d&#39;organisation",
+      "title": "Type d'organisation",
       "type": "string",
       "constraints": {
         "enum" : [

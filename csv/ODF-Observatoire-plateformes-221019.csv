@@ -1,0 +1,39 @@
+﻿nom,type,url,porteur,techno,thème
+adresse.data.gouv.fr,Concentrateur,https://adresse.data.gouv.fr,Etalab,Spécifique,Adresse
+data.culture.gouv.fr,Portail,https://data.culture.gouv.fr,Ministère de la Culture,OpenDataSoft,Culture
+POP - Plateforme Ouverte du Patrimoine,Concentrateur,https://www.pop.culture.gouv.fr,Ministère de la Culture,Spécifique,Culture
+entreprise.data.gouv.fr,Concentrateur,https://entreprise.data.gouv.fr,Etalab,Spécifique,Economie
+sirene.fr,Site web,http://www.sirene.fr,Insee,Spécifique,Economie
+Data Aides Entreprises,Concentrateur,https://data.aides-entreprises.fr,Ministère de l'Economie et des Finances,Spécifique,Economie
+data.economie.gouv.fr,Portail,https://data.economie.gouv.fr,Ministère de l'Economie et des Finances,OpenDataSoft,Economie
+Open data Pôle Emploi,Site web,http://www.pole-emploi.org/opendata/,Pôle Emploi,Spécifique,Economie
+Open Urssaf,Portail,https://open.urssaf.fr,URSSAF,OpenDataSoft,Economie
+data.education.gouv.fr,Portail,https://data.education.gouv.fr,Ministère de l'Education Nationale,OpenDataSoft,Education
+Open data Agence ORE,Portail,https://opendata.agenceore.fr,Agence ORE,OpenDataSoft,Energies
+Open data Enedis,Portail,https://data.enedis.fr,Enedis,OpenDataSoft,Energies
+Open data GRDF,Portail,https://opendata.grdf.fr,GRDF,OpenDataSoft,Energies
+Open data Réseaux Energies,Portail,https://opendata.reseaux-energies.fr,Multi-opérateurs,OpenDataSoft,Energies
+Data ESR,Portail,https://data.enseignementsup-recherche.gouv.fr,Ministère ESR,OpenDataSoft,Enseignement supérieur et recherche
+Open data ADEME,Portail,https://data.ademe.fr,Agence de l'environnement et de la maîtrise de l'énergie,Datafair,Environnement
+Open data Atmo France,Site web,https://atmo-france.org/les-donnees/,Atmo France,Spécifique,Environnement
+Data Eaufrance,Concentrateur,http://www.data.eaufrance.fr,Eaufrance,Spécifique,Environnement
+data.ofgl.fr,Portail,https://data.ofgl.fr,Observatoire des Finances et de la Gestion publique Locales,OpenDataSoft,Finances publiques
+Open data ONISEP,Portail,http://opendata.onisep.fr,ONISEP,LOD.Eolas,Formation Métiers Handicap
+data.gouv.fr,Portail,https://www.data.gouv.fr,Etalab,uData,Magasin général
+transport.data.gouv.fr,Concentrateur,https://transport.data.gouv.fr,Ministère des Transports,Spécifique,Mobilités
+Open data SNCF,Portail,https://data.sncf.com,SNCF,OpenDataSoft,Mobilités
+eCarto,Concentrateur,https://ecarto.banquedesterritoires.fr,Banque des Territoires,Spécifique,Numérique éducatif
+dataNOVA,Portail,https://datanova.laposte.fr,Groupe La Poste,OpenDataSoft,Postes
+CeremaData,Géoportail,https://www.cdata.cerema.fr,Cerema,GeoNetwork,Référentiels géographiques
+geo.data.gouv.fr,Concentrateur,https://geo.data.gouv.fr,Etalab,Spécifique,Référentiels géographiques
+Open data IGN,Site web,http://www.ign.fr/institut/activites/lign-lopen-data,Institut Géographique National,Spécifique,Référentiels géographiques
+Géo-IDE,Géoportail,http://catalogue.geo-ide.developpement-durable.gouv.fr,Interministériel,GeoNetwork,Référentiels géographiques
+atlaSanté,Géoportail,https://www.atlasante.fr,Ministère de la Santé,Prodige,Santé
+Data Drees,Portail,http://www.data.drees.sante.gouv.fr,Ministère de la Santé,OpenDataSoft,"Santé,Statistiques,Solidarités"
+Cafdata,Portail,http://data.caf.fr,Caisse d'Allocations Familiales,CKAN,Solidarités
+insee.fr,Site web,https://www.insee.fr/fr/statistiques?debut=0&categorie=3,Insee,Spécifique,Statistiques
+Open data ANFR,Portail,https://data.anfr.fr,ANFR,Data4Citizen,Télécommunications
+Open data ARCEP,Site web,https://www.arcep.fr/cartes-et-donnees/lopen-data.html,ARCEP,Spécifique,Télécommunications
+Data Tourisme,Concentrateur,http://www.datatourisme.fr,ADN Tourisme,Spécifique,Tourisme
+Géoportail de l'urbanisme,Géoportail,https://www.geoportail-urbanisme.gouv.fr,IGN,Spécifique,Urbanisme
+Géoportail de l'urbanisme,Concentrateur,https://www.geoportail-urbanisme.gouv.fr,Institut Géographique National,Spécifique,Urbanisme
