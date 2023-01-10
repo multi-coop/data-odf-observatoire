@@ -71,7 +71,7 @@ source venv/bin/activate
 
 ### Run local server
 
-To run the server on `http://localhost:8800`:
+To run the server on `http://localhost:8899`:
 
 ```sh
 python server.py
@@ -83,9 +83,9 @@ or
 sh run_server.sh
 ```
 
-The html file `index.html` will be served on `http://localhost:8800`
+The html file `index.html` will be served on `http://localhost:8899`
 
 Files will be locally served on :
 
-- `http://localhost:8800/content/<path:folder_path>/<string:filename>`
-- `http://localhost:8800/statics/<path:folder_path>/<string:filename>`
+- `http://localhost:8899/content/<path:folder_path>/<string:filename>`
+- `http://localhost:8899/statics/<path:folder_path>/<string:filename>`
